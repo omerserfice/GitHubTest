@@ -83,3 +83,27 @@ Ne İşe Yarar?
 ``git rebase`` -> bir branch'teki commit'leri alıp başka bir branch'in en son commit'inden itibaren yeniden oluşturur. Bu işlem, iki branch'i birleştirmenin alternatif bir yoludur ve git merge'den farklı olarak commit geçmişini daha temiz ve doğrusal hale getirir.
 
 # Git Push & Pull 
+
+```git push`` -> Ne işe yar? git push, yerel deponuzdaki değişiklikleri uzak depoya gönderir.
+
+Nasıl çalışır? Yerel deponuzdaki commit'leri ve dalları uzak depoya yükler. Bu, diğer geliştiricilerin sizin yaptığınız değişiklikleri görmesini sağlar.
+
+Ne zaman kullanılır? Yerel deponuzda yaptığınız değişiklikleri uzak depoya yüklemek istediğinizde kullanılır.
+```` git push origin main ````
+
+``git pull`` -> Ne işe yar? git pull, uzak depodaki değişiklikleri indirir ve bu değişiklikleri yerel çalışma alanınıza otomatik olarak entegre eder.
+
+Nasıl çalışır? git pull aslında iki işlemi birleştirir: git fetch ve git merge. Önce uzak depodaki değişiklikleri indirir (fetch), ardından bu değişiklikleri yerel dalınıza birleştirir (merge).
+
+Ne zaman kullanılır? Uzak depodaki değişiklikleri yerel çalışma alanınıza hemen uygulamak istediğinizde kullanılır.
+
+```` git pull origin main ````
+
+
+``git fetch`` -> Ne işe yarar? git fetch, uzak depodaki değişiklikleri yerel deponuza indirir, ancak bu değişiklikleri yerel çalışma alanınıza (working directory) uygulamaz.
+
+Nasıl çalışır? Uzak depodaki tüm yeni commit'leri, dalları (branches) ve etiketleri (tags) yerel deponuza getirir, ancak bu değişiklikleri henüz yerel dallarınıza entegre etmez.
+
+Ne zaman kullanılır? Uzak depodaki değişiklikleri görmek istediğinizde, ancak bu değişiklikleri henüz yerel çalışma alanınıza uygulamak istemediğinizde kullanılır.
+
+```` git fetch origin ````
