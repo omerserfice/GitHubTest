@@ -84,7 +84,7 @@ Ne İşe Yarar?
 
 # Git Push & Pull 
 
-```git push`` -> Ne işe yar? git push, yerel deponuzdaki değişiklikleri uzak depoya gönderir.
+```git push``` -> Ne işe yar? git push, yerel deponuzdaki değişiklikleri uzak depoya gönderir.
 
 Nasıl çalışır? Yerel deponuzdaki commit'leri ve dalları uzak depoya yükler. Bu, diğer geliştiricilerin sizin yaptığınız değişiklikleri görmesini sağlar.
 
